@@ -7,6 +7,7 @@ RUN apk --no-cache update && \
 
 RUN pip3 install cfn-lint
 RUN pip3 install cfn-flip
+RUN pip3 install yamllint
 
 ENTRYPOINT [ "cfn-lint" ]
 CMD [ "--help" ]
