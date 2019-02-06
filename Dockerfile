@@ -2,7 +2,7 @@ FROM alpine:latest
 
 # Install PreReq's
 RUN apk --no-cache update && \
-    apk --no-cache add python3 bash git && \
+    apk --no-cache add python3 bash git make && \
     rm -rf /var/cache/apk/*
 
 RUN pip3 install cfn-lint
